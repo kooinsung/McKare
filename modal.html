@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!--  <link rel="icon" href="/favicon.ico" sizes="any">-->
+  <!--  <link rel="icon" href="/icon.svg" type="image/svg+xml">-->
+  <!--  <link rel="apple-touch-icon" href="icon.png">-->
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="wrap">
+  <main>
+    <div class="page-title">
+      <button type="button" class="back">back</button>
+      <h1>알림내역 목록</h1>
+    </div>
+
+    <div class="sensor-notice-conter">
+      <div class="sensor-menus">
+        <dl>
+          <dt>알림유형</dt>
+          <dd>
+            <ul>
+              <li><a href="" class="active">심박이상(4)</a></li>
+              <li><a href="">호흡이상(4)</a></li>
+              <li><a href="">낙상(4)</a></li>
+              <li><a href="">낙상위험(4)</a></li>
+              <li><a href="">심박이상(4)</a></li>
+              <li><a href="">호흡이상(4)</a></li>
+              <li><a href="">낙상(4)</a></li>
+              <li><a href="">낙상위험(4)</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>조치여부</dt>
+          <dd>
+            <ul>
+              <li><a href="" class="active">미조치(4)</a></li>
+              <li><a href="">조치완료(999)</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="sensor-notice">
+      <ul>
+        <li>
+          <a href="">
+            <div class="notice-infos">
+              <span class="date">22.10.01 13:30</span>
+              <div class="title">호흡 불안정</div>
+            </div>
+            <span class="status un-active">미조치</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="notice-infos">
+              <span class="date">22.10.01 13:30</span>
+              <div class="title">연결 해제</div>
+            </div>
+            <span class="status un-active">미조치</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="notice-infos">
+              <span class="date">22.10.01 13:30</span>
+              <div class="title">심박 불안정</div>
+            </div>
+            <span class="status active">조치완료</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="notice-infos">
+              <span class="date">22.10.01 13:30</span>
+              <div class="title">낙상</div>
+            </div>
+            <span class="status active">조치완료</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="notice-infos">
+              <span class="date">22.10.01 13:30</span>
+              <div class="title">호흡 불안정</div>
+            </div>
+            <span class="status active">조치완료</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </main>
+
+  <aside class="fixed-menu">
+    <ul>
+      <li class="home active"><a href=""><strong>Home</strong></a></li>
+      <li class="list"><a href=""><strong>List</strong></a></li>
+      <li class="favorites"><a href=""><strong>Favorites</strong></a></li>
+      <li class="alerts"><a href=""><strong>Alerts</strong></a></li>
+      <li class="setting"><a href=""><strong>Setting</strong></a></li>
+    </ul>
+  </aside>
+
+  <div class="modal">
+    <div class="modal-header">
+      <strong>알림내역 상세</strong>
+      <button type="button" class="close">close</button>
+    </div>
+    <div class="modal-body">
+      <div class="notice-detail-infos">
+        <span class="notice-detail-date">22.10.01 13:30</span> <span class="notice-detail-name">호흡이상 (수치 : 80)</span>
+      </div>
+      <span class="textarea">
+        <textarea rows="6" placeholder="상세 내용을 입력해주세요(디폴트 컬러)"></textarea>
+      </span>
+    </div>
+    <div class="button-group">
+      <a href="" class="line">신고</a>
+      <a href="" class="full">저장</a>
+    </div>
+  </div>
+
+  <div class="dim"></div>
+</div>
+</body>
+
+</html>

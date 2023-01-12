@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!--  <link rel="icon" href="/favicon.ico" sizes="any">-->
+  <!--  <link rel="icon" href="/icon.svg" type="image/svg+xml">-->
+  <!--  <link rel="apple-touch-icon" href="icon.png">-->
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="wrap">
+  <main>
+    <div class="page-title">
+      <button type="button" class="back">back</button>
+      <h1>센서 정보</h1>
+    </div>
+
+    <div class="sensor-detail">
+      <div class="default-list-item">
+        <a href="">
+          <div class="basic-infos">
+            <em>센서ID</em>
+            <span>#0000001</span>
+          </div>
+          <span class="fav active">즐겨찾기 등록됨</span>
+        </a>
+      </div>
+      <div class="default-list-item">
+        <a href="">
+          <div class="basic-infos">
+            <em>센서이름</em>
+            <span>김가나님</span>
+          </div>
+          <span class="change">변경</span>
+        </a>
+      </div>
+      <div class="default-list-item">
+        <a href="">
+          <div class="basic-infos">
+            <em>센서위치</em>
+            <span>병동A > 6층 > 602호</span>
+          </div>
+          <span class="save">저장</span>
+        </a>
+      </div>
+      <div class="default-list-item type2">
+        <div class="title">
+          <span>현재 상태</span>
+          <button type="button" class="current-status">10/19(수) PM 11:01 상황</button>
+        </div>
+        <div class="status-infos">
+          <ul class="check-list">
+            <li class="active">
+              <strong>50</strong>
+              <span>심박</span>
+            </li>
+            <li>
+              <strong>34</strong>
+              <span>호흡</span>
+            </li>
+            <li>
+              <strong>36</strong>
+              <span>체온</span>
+            </li>
+            <li class="active">
+              <strong><img src="./assets/images/icon_sensor1-on.png" alt=""></strong>
+              <span>낙상</span>
+            </li>
+          </ul>
+          <div class="re-entry">
+            <span>재실시간 :19일 12시간 40분</span>
+          </div>
+        </div>
+      </div>
+      <div class="default-list-item type2">
+        <div class="title">
+          <span>차트</span>
+        </div>
+        <div class="chat-info">
+          <span class="textarea"><textarea rows="5"></textarea></span>
+        </div>
+      </div>
+      <div class="default-list-item type2">
+        <div class="title arrow">
+          <a href="">알림내역</a>
+        </div>
+        <div class="sensor-notice">
+          <ul>
+            <li>
+              <a href="">
+                <div class="notice-infos">
+                  <span class="date">22.10.01 13:30</span>
+                  <div class="title">호흡 불안정</div>
+                </div>
+                <span class="status un-active">미조치</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="notice-infos">
+                  <span class="date">22.10.01 13:30</span>
+                  <div class="title">연결 해제</div>
+                </div>
+                <span class="status un-active">미조치</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="notice-infos">
+                  <span class="date">22.10.01 13:30</span>
+                  <div class="title">심박 불안정</div>
+                </div>
+                <span class="status active">조치완료</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="notice-infos">
+                  <span class="date">22.10.01 13:30</span>
+                  <div class="title">낙상</div>
+                </div>
+                <span class="status active">조치완료</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="notice-infos">
+                  <span class="date">22.10.01 13:30</span>
+                  <div class="title">호흡 불안정</div>
+                </div>
+                <span class="status active">조치완료</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <a href="" class="full">초기화</a>
+      <a href="" class="line">센서회수</a>
+    </div>
+  </main>
+
+  <aside class="fixed-menu">
+    <ul>
+      <li class="home active"><a href=""><strong>Home</strong></a></li>
+      <li class="list"><a href=""><strong>List</strong></a></li>
+      <li class="favorites"><a href=""><strong>Favorites</strong></a></li>
+      <li class="alerts"><a href=""><strong>Alerts</strong></a></li>
+      <li class="setting"><a href=""><strong>Setting</strong></a></li>
+    </ul>
+  </aside>
+
+  <div class="action-sheet open">
+    <div class="action-sheet-header">
+      <button type="button" class="cancel">취소</button>
+      <button type="button" class="success">완료</button>
+    </div>
+    <div class="action-sheet-body">
+      <div class="inner">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="dim"></div>
+</div>
+</body>
+
+</html>
