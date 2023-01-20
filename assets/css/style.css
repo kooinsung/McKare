@@ -881,13 +881,13 @@
     width: 100%;
     max-width: 37px;
     display: block;
-    font-size: 10px;
+    font-size: 13px;
     color: #5f8ad5;
-    margin-top: 3px;
+    margin-top: 5px;
+    font-weight: 700;
 }
 
 .status-item-group .check-list .active strong{
-    background: #ff5b53;
     color: #fff;
 }
 
@@ -1105,13 +1105,13 @@
     width: 100%;
     max-width: 50px;
     display: block;
-    font-size: 10px;
+    font-size: 13px;
     color: #5f8ad5;
-    margin: 3px auto 10px auto;
+    margin: 5px auto 10px auto;
+    font-weight: bold;
 }
 
 .sensor-list .sensor-items .check-list .active strong{
-    background: #ff5b53;
     color: #fff;
 }
 
@@ -1457,13 +1457,13 @@
     width: 100%;
     max-width: 50px;
     display: block;
-    font-size: 10px;
+    font-size: 13px;
     color: #5f8ad5;
-    margin: 3px auto 10px auto;
+    margin: 5px auto 10px auto;
+    font-weight: bold;
 }
 
 .default-list-item .status-infos .check-list .active strong{
-    background: #ff5b53;
     color: #fff;
 }
 
@@ -1477,30 +1477,28 @@
     right: 0;
 }
 
-.default-list-item .status-infos .re-entry:before{
-    content: '';
+.default-list-item .status-infos .re-entry strong {
     display: block;
     width: 37px;
     height: 37px;
     line-height: 37px;
     border-radius: 37px;
-    font-size: 14px;
-    color: #31d6c1;
-    font-family: 'Montserrat', 'Noto Sans KR';
-    font-weight: 700;
     margin: 0 auto;
     text-align: center;
-    background: #31d6c1 url('../images/icon_bed.png') center center no-repeat;
-    background-size: 19px 16px;
+}
+
+.default-list-item .status-infos .re-entry strong img{
+    width: 100%;
 }
 
 .default-list-item .status-infos .re-entry span {
     width: 100%;
     display: block;
-    font-size: 10px;
+    font-size: 13px;
     color: #89d8d5;
-    margin: 3px auto 10px auto;
+    margin: 5px auto 10px auto;
     text-align: center;
+    font-weight: 700;
 }
 
 .default-list-item .chat-info{
