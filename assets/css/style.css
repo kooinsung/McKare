@@ -509,7 +509,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .notice-count-list.red-line ul{
+    .notice-count-list.red-full ul{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -535,14 +535,10 @@
     border-top: 2px solid #5f8ad5;
 }
 
-.notice-count-list.red-line li{
+.notice-count-list.red-full li{
     position: relative;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     overflow: hidden;
-    border-top: 2px solid #ff5b53;
 }
 
 .notice-count-list li:before{
@@ -560,7 +556,7 @@
     display: none;
 }
 
-.notice-count-list.red-line li:before {
+.notice-count-list.red-full li:before {
     display: none;
 }
 
@@ -641,10 +637,10 @@
     box-sizing: border-box;
 }
 
-.notice-count-list.red-line a{
+.notice-count-list.red-full a{
     display: block;
     width: 100%;
-    background: #fff;
+    background: #ff5b53;
     height: 110px;
     padding: 15px;
     box-sizing: border-box;
@@ -654,6 +650,52 @@
     position: absolute;
     bottom: 15px;
     left: 15px;
+}
+
+.notice-count-list img{
+    position: absolute;
+}
+
+.notice-count-list img.icon1{
+    width: 52px;
+    height: 53px;
+    top: 13px;
+    right: 12px;
+}
+
+.notice-count-list img.icon2{
+    width: 53px;
+    height: 52px;
+    top: 14px;
+    right: 10px;
+}
+
+.notice-count-list img.icon3{
+    width: 55px;
+    height: 52px;
+    top: 11px;
+    right: 10px;
+}
+
+.notice-count-list img.icon4{
+    width: 52px;
+    height: 52px;
+    top: 11px;
+    right: 11px;
+}
+
+.notice-count-list img.icon5{
+    width: 52px;
+    height: 52px;
+    top: 12px;
+    right: 11px;
+}
+
+.notice-count-list img.icon6{
+    width: 52px;
+    height: 52px;
+    top: 13px;
+    right: 11px;
 }
 
 .notice-count-list .name{
@@ -693,65 +735,67 @@
     font-weight: 400;
 }
 
-.notice-count-list.red-line .title{
+.notice-count-list.red-full .title{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.notice-count-list.red-line .title:before{
+.notice-count-list.red-full .title:before{
     content:'';
     width: 41px;
     height: 42px;
     display: inline-block;
 }
 
-.notice-count-list.red-line .title.icon1:before{
+.notice-count-list.red-full .title.icon1:before{
     background: url('../images/icon_emergency.png') center center no-repeat;
     background-size: 41px 42px;
 }
 
-.notice-count-list.red-line .title.icon2:before{
-    width: 42px;
-    height: 37px;
+.notice-count-list.red-full .title.icon2:before{
+    width: 45px;
+    height: 36px;
     background: url('../images/icon_fall.png') center center no-repeat;
-    background-size: 42px 37px;
+    background-size: 45px 36px;
 }
 
-.notice-count-list.red-line .title-inner{
+.notice-count-list.red-full .title-inner{
     margin-left: 10px;
 }
 
-.notice-count-list.red-line .title span{
+.notice-count-list.red-full .title span{
     font-size: 10px;
     font-weight: 700;
-    color: #ff5b53;
+    color: #fff;
     display: block;
 }
 
-.notice-count-list.red-line .title strong{
+.notice-count-list.red-full .title strong{
     font-size: 16px;
     font-weight: 700;
-    color: #ff5b53;
+    color: #fff;
     display: block;
     margin-top: 3px;
 }
 
-.notice-count-list.red-line .count{
+.notice-count-list.red-full .count{
     text-align: center;
     font-size: 0;
     margin-top: 20px;
 }
 
-.notice-count-list.red-line .count strong{
+.notice-count-list.red-full .count strong{
     font-size: 20px;
     font-weight: 700;
-    color: #ff5b53;
+    color: #f6ff02;
+    font-family: 'Montserrat', 'Noto Sans KR';
 }
 
-.notice-count-list.red-line .count span{
+.notice-count-list.red-full .count span{
     font-size: 20px;
-    color: #000;
+    color: #fff;
+    font-family: 'Montserrat', 'Noto Sans KR';
 }
 
 .item-container{
@@ -827,6 +871,10 @@
     font-size: 14px;
     color: #5f8ad5;
     font-family: 'Montserrat', 'Noto Sans KR';
+}
+
+.status-item-group .check-list strong img{
+    width: 100%;
 }
 
 .status-item-group .check-list span{
@@ -1520,7 +1568,6 @@
     height: 37px;
     min-height: 37px;
     border-radius: 37px;
-    background: #ff5b53;
     text-align: center;
     display: flex;
     align-content: center;
@@ -1530,7 +1577,7 @@
 }
 
 .notice .list .icon img{
-    width: 60%;
+    width: 100%;
 }
 
 .notice .list .room{
@@ -1753,11 +1800,13 @@
 .patient-count-list .count strong{
     font-size: 20px;
     font-weight: 700;
+    font-family: 'Montserrat', 'Noto Sans KR';
 }
 
 .patient-count-list .count span{
     font-size: 20px;
     color: #000;
+    font-family: 'Montserrat', 'Noto Sans KR';
 }
 
 .patient-count-list li.blue .infos span{
